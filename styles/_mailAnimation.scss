@@ -1,0 +1,54 @@
+@keyframes fixedBoxAnimation {
+    0% {
+        top: 168px;
+    }
+    70% {
+        top: 168px;
+    }
+    100% {
+        top: 215px;
+    }
+}
+
+@keyframes chevronAnimation {
+    0% {
+        transform: rotate(270deg);
+    }
+    95% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes firstBoxAnimation {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes personalMailAnimation {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

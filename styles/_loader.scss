@@ -1,0 +1,203 @@
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10000000;
+    background-color: $colorWhite;
+    .loader-txt-wrapper { 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 10%;
+        margin-left: 20%;
+    .loader {
+     
+        text-align: center;
+        position: relative;
+        width: 300px;
+        height:250px;
+        animation: loaderAppear 3s 1;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .eye {
+            z-index: 1;
+            width: 250px;
+            height: 240px;
+            position: absolute;
+            animation: eyeAppear 1s 1;
+        }
+        .smile {
+            z-index: 1;
+            width: 250px;
+            height: 250px;
+            // opacity: 0;
+            position: absolute;
+            animation-delay: 1s;
+            animation: smileAppear 2s 1;
+        }
+        .nose-shadow {
+            z-index: 1;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            animation: noseshadowAppear 5s 1;
+        }
+        .intro-hero {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            animation-delay: 3s;
+            animation: introHeroAppear 2s 1;
+        }
+    }
+    
+    
+    .text {
+        width: 450px;
+        padding: 20px;
+        h2 {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        animation-delay: 3s;
+        animation: textAppear 3.5s 1;
+    }
+    }
+    @keyframes loaderAppear {
+        0% {
+            transform: translate(250px);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(250px);
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes eyeAppear {
+        0% {
+            opacity: 0;
+            height: 0px;
+        }
+        25% {
+            opacity: .5;
+            height: 150px;
+        }
+        100% {
+            opacity: 1;
+            height: 240px;
+        }
+    }
+    
+    @keyframes smileAppear {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: .25;
+        }
+    
+    
+        50% {
+            opacity: .34;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes noseshadowAppear {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            opacity: .2;
+        }
+        50% {
+            opacity: .5;
+        }
+        75% {
+            opacity: .7;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes introHeroAppear {
+        0% {
+            opacity: 0;
+        }
+    
+        25% {
+            opacity: .5;
+        }
+        50% {
+            opacity: .7;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+        @keyframes textAppear {
+            0% {
+                transform: translateX(800px);
+                opacity: 0;
+            }
+            25% {
+                opacity: 0;
+                transform: translateX(400px);
+            }
+            50% {
+                opacity: 0;
+                transform: translateX(200px);
+            }
+            75% {
+                transform: translateX(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+}
+
+.disappear {
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+
+        opacity: 0;
+        visibility: hidden;
+    }      
+  }

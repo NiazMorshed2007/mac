@@ -1,0 +1,55 @@
+@keyframes browserAnimation {
+    0% {
+        top: 50px;
+        left: 555px;
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+        top: 70px;
+        left: 470px;
+    }
+    100% {
+        opacity: 1;
+        top: 90px;
+        left: 400px;
+    }
+}
+
+
+@keyframes tvAnimation {
+    0% {
+        top: 170px;
+        left: 500px;
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+        top: 170px;
+        left: 500px;
+    }
+    100% {
+        opacity: 1;
+        top: 170px;
+        left: 300px;
+    }
+
+}
+
+
+@keyframes musicAnimation {
+    0% {
+        left: 90px;
+        opacity: 0;
+    }
+    90% {
+        left: 120px;
+        opacity: 0;
+    }
+    100% {
+        left: 170px;
+        opacity: 1;
+    }
+
+}

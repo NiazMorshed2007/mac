@@ -1,0 +1,967 @@
+.container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+    .left {
+        z-index: 11;
+        margin: auto;
+        width: 570px;
+        height: 650px;
+        background: white;
+        padding: 30px;
+        position: relative;
+        .left-item1 {
+            position: absolute;
+            display: block;
+            width: 90%;
+            height: auto;
+            padding: 25px;
+            opacity: 0;
+            transition: all .4s ease-out;
+            // transition-delay: -2s;
+            // transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            background: white;
+            .apps-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                }
+            }
+        }
+
+
+
+        .left-item2 {
+            @extend .left-item1;
+            opacity: 0;
+            .finder-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $finderHeader
+                }
+            }
+        }
+
+        .left-item3 {
+            @extend .left-item1;
+            opacity: 0;
+            .spotlight-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $spotlightHeader;
+                }
+            }
+        }
+
+        .left-item4 {
+            @extend .left-item1;
+            opacity: 0;
+            h1 {
+                @include h1;
+            }
+            h2 {
+                @include h2;
+                color: $keyboardHeader;
+            }
+        }
+
+        .left-item5 {
+            @extend .left-item1;
+            opacity: 0;
+            .notifications-txt1 { 
+            h1 {
+                @include h1;
+            }
+            h2 {
+                @include h2;
+                color: $notificationsHeader;
+            }
+        }
+        }
+
+        .left-item6 {
+            @extend .left-item1;
+            opacity: 0;
+            .safari-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $safariHeader;
+                }
+            }
+        }
+
+        .left-item7 {
+            @extend .left-item1;
+            opacity: 0;
+            .messages-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $messagesHeader;
+                }
+            }
+        }
+
+        .left-item8 {
+            @extend .left-item1;
+            opacity: 0;
+            .photos-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $photosHeader;
+                }
+            }
+        }
+
+        .left-item9 {
+            @extend .left-item1;
+            opacity: 0;
+            .mail-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $mailHeader;
+                }
+            }
+        }
+
+        .left-item10 {
+            @extend .left-item1;
+            opacity: 0;
+            .entertainment-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $entertainmentHeader;
+                }
+            }
+        }
+
+
+        .left-item11 {
+            @extend .left-item1;
+            opacity: 0;
+            .apple-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $appleHeader;
+                }
+            }
+        }
+
+        .left-item12 {
+            @extend .left-item1;
+            opacity: 0;
+            .continuity-txt1 {
+                h1 {
+                    @include h1;
+                }
+                h2 {
+                    @include h2;
+                    color: $continuityHeader;
+                }
+            }
+        }
+
+
+        .left-item {
+            opacity: 1;
+            // transition: 1s ease-in-out;
+            animation: leftItem 1.3s linear 1;
+        }
+
+    }
+
+ 
+
+    .right {
+        // opacity: 0;
+        width: 55%;
+        height: 100%;
+        background: $background;
+        transition: all .5s ease-in-out;
+        // animation: appImgAnimation 1s linear 2s 1;
+
+        .apps-img {
+            width: 100%;
+            height: 100%;
+            background-color:$background;
+            opacity: 1;
+            position: absolute;
+            transition: all .5s ease-in-out;
+            .laptop {
+                @include laptop;
+                top: 10px;
+            }
+            .wallpaper {
+                @include wallpaper;
+            }
+            .calendar-icon {
+                width: 38px;
+                height: 38px;
+                position: absolute;
+                display: block;
+                transform: translate(390px, -130px);
+                border-radius: 50%;
+                animation: calendarIcon 2s linear 5s 1;
+            }
+            .calendar-icon-repeat {
+                animation: calendarIconRep 2s linear 1s 1;
+            }
+            .calendar {
+                width: 530px;
+                height: 310px;
+                position: absolute;
+                display: block;
+                transform: translate(250px, -520px);
+                border-radius: 7px;
+                animation: calendarAnimation 2.6s linear 4s 1;
+            }
+            .calendar-repeat {
+                animation: calendarAnimationRep 2.6s linear 1;
+            }
+        }
+
+
+        .finder-img {
+            @include everyImg;
+            .finder-box {
+                position: absolute;
+                width: 741px;
+                height: 504px;
+                top: 100px;
+            }
+            .finder-top {
+                position: absolute;
+                display: block;
+                width: 120px;
+                height: 120px;
+                top: 70px;
+                left: 377px;
+                border-radius: 50%;
+                // border: 2px solid orange;
+                opacity: 0;
+                z-index: 11;
+                box-shadow: 0px 0px 10px;
+                transition: all 1s ease-in-out;
+            }  
+            .finder-top-animation {
+                opacity: 1;
+                z-index: 9;
+                box-shadow: 0px 0px 0px;
+                animation: finderTopAnimation 3s linear 1;
+            }
+            .finder-hidden-img {
+                position: absolute;
+                display: block;
+                width: 530px;
+                height: 395px;
+                border-radius: 7px;
+                left: 180px;
+                top: 160px;
+                z-index: 10;
+            }
+            .find-hidden-img-animation {
+                animation: findHiddenImg 3.5s linear 1;
+            }
+        }
+
+        .spotlight-img {
+            @include everyImg;
+            .serach-box {
+                width: 604px;
+                height: 105px;
+                position: absolute;
+                top: 100px;
+                left: 70px;
+            }
+            .search-placeholder {
+                width: 300px;
+                height: 40px;
+                position: relative;
+                transition: all .5s ease;
+                // opacity: 1;
+                // z-index: 1;
+                transform: translate(140px, 114px);
+                // border: 1px solid green;
+            }
+            .search-placeholder-animation {
+                opacity: 0;
+                z-index: 1;
+                animation: searchPlaceHolder 2.6s linear 1;
+            }
+            .search-div {
+                // width: 10px;
+                // height: 40px;
+                // border: 1px solid orange;
+                position: absolute;
+                display: block;
+                transform: translate(150px, 70px);
+                overflow: hidden;
+                opacity: 0;
+                transition: all .4s ease-in-out;
+                .search-innerDiv { 
+                    width: 400px;
+                    // opacity: 0;
+                    z-index: 100;
+                    height: 40px;
+                    transition: all .5s ease-in-out;
+                .search {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    transition: all .5s ease-in-out;
+                }
+            }
+            }
+            //animation
+
+            .search-div-animation {
+                opacity: 1;
+                z-index: 1000;
+                animation: searchDivAnimation 5.4s ease 1;
+            }
+
+            // //
+            .search-first {
+                position: absolute;
+                width: 604px;
+                height: 405px;
+                opacity: 0;
+                z-index: 100;
+                transform: translate(-229px, 99px);
+                transition: all .5s ease-in-out;
+                // opacity: 1;
+            }
+
+            .search-first-animation {
+                animation: searchFirstAnimation 5.2s linear 1s 1;
+                animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            }
+
+            .cursor {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                transform: translate(-25px, 230px);
+                z-index: 111;
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+
+            .cursor-animation {
+                opacity: 1;
+                animation: cursorAnimation 5s linear 1;
+            }
+
+            .search-second {
+                @extend .search-first;
+                opacity: 0;
+            }
+
+            .search-second-animation {
+                opacity: 0;
+                animation: searchSecondAnimation 6s linear 1;
+            }
+            .search-third {
+                @extend .search-first;
+                opacity: 0;
+            }
+            .search-third-animation {
+                opacity: 1;
+                animation: searchThirdAnimation 5.7s linear 1;
+            }
+        }
+
+
+        .keyboard-img {
+            @include everyImg;
+            .keyboard {
+                width: 998px;
+                height: 418px;
+                position: relative;
+                left: 60px;
+                top: 90px;
+            }
+            .overlay {
+                height: 420px;
+                position: absolute;
+                display: block;
+                z-index: 11;
+                transform: translate(60px, -336px);
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
+            .overlay-animation {
+                opacity: 1;
+                animation: overlayAnimation 2s ease 2s 1;
+            }
+        }
+
+
+        .notifications-img {
+            @include everyImg;
+            .laptop {
+                @include laptop;
+                position: relative;
+                left: -270px;
+                top: 20px;
+            }
+            .wallpaper {
+                @include wallpaper;
+                left: -275px;
+                top: 615px;
+                // transform: translate(-155px, -555px);
+            }
+            .notifications-message {
+                position: absolute;
+                display: block;
+                width: 210px;
+                height: 47px;
+                top: 70px;
+                transform: translateX(390px);
+                border-radius: 6px;
+                opacity: 0;
+                transition: all .4s ease-in-out;
+            }
+            .notifications-msg {
+                top: 130px;
+                opacity: 1;
+                animation: notificationsMsgAnimation 1s linear 1s 1;
+            }
+            .notifications-calendar {
+                @extend .notifications-message;
+                transform: translateX(470px);
+            }
+            .notifications-calendar-animation {
+                opacity: 1;
+                transform: translateX(390px);
+                animation: notificationsCalendarAnimation 2s linear 1;
+            }
+            .inside-msg {
+                position: absolute;
+                display: block;
+                width:  210px;
+                height: 100px;
+                opacity: 1;
+                top: 130px;
+                transform: translateX(390px);
+                border-radius: 7px;
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+            .inside-msg-animation {
+                opacity: 1;
+                animation: insideMsgAnimation 3s linear 1;
+            }
+            .msg {
+                position: absolute;
+                display: block;
+                width: 170px;
+                height: 15px;
+                transform: translate(400px, -430px);
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+            .msg-animation {
+                opacity: 1;
+                animation: msgAnimation 5s linear 1;
+            }
+        }
+
+
+        .safari-img {
+            @include everyImg;
+            .safari {
+                width: 880px;
+                height: 633px;
+                position: relative;
+                left: -180px;
+                top: 15px;
+            }
+            .blank {
+                position: absolute;
+                display: block;
+                z-index: 100;
+                top: 40px;
+                left: 115px;
+                width: 190px;
+                height: 20px;
+                transition: all .5s ease-in-out;
+                opacity: 1;
+            }
+            .blank-animation {
+                opacity: 0;
+                animation: blankAnimation 4s linear 1;
+            }
+            .search {
+                @extend .blank;
+                left: 119px;
+                // opacity: 1;
+                transition: all .5s ease-in-out;
+                overflow: hidden;
+                .inner-search {
+                    width: 200px;
+                    height: 20px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .search-animation {
+                opacity: 1;
+                width: 190px;
+                animation: searchAnimation 3s linear 1;
+            }
+
+            .weather {
+                width: 345px;
+                height: 225px;
+                position: absolute;
+                display: block;
+                top: 65px;
+                left: 92px;
+                border-radius: 7px;
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+
+            .weather-animation {
+                opacity: 1;
+                animation: weatherAnimation 4s linear 1;
+            }
+
+        }
+
+        .messages-img {
+            @include everyImg;
+            .chat {
+                width: 597px;
+                height: 518px;
+                position: relative;
+                left: 70px;
+                top: 40px;
+            }
+            .chat-box {
+                width: 276px;
+                height: 367px;
+                // border: 2px solid orange;
+                position: absolute;
+                display: block;
+                top: 100px;
+                left: 360px;
+                overflow: hidden;
+                .chat-innerBox {
+                    transition: all 1s ease-in-out;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .chatInner-animation {
+                transform: translateY(-50px);
+                animation: chatInnerAnimation 4s linear 1;
+            }
+            }
+            .wonderful {
+                position: absolute;
+                display: block;
+                width: 150px;
+                height: 15px;
+                overflow: hidden;
+                transition: all .5s ease-in-out;
+                // border: 2px solid green;
+                top: 474px;
+                left: 410px;
+                .inner-wonderful {
+                    width: 160px;
+                    height: 14px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .wonderful-animation {
+                opacity: 0;
+                animation: wonderfulAnimation 3s linear 1s 1;
+            }
+
+            .wonderful-msg {
+                position: absolute;
+                display: block;
+                z-index: 10;
+                width: 250px;
+                height: 28px;
+                // border: 2px solid green;
+                left: 380px;
+                top: 430px;
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+            .wonderful-msg-animation {
+                opacity: 1;
+                animation: wonderfulMsgAnimation 4.4s linear 1;
+            }
+        }
+
+
+        .photos-img {
+            @include everyImg;
+            .frame {
+                width: 933px;
+                height: 638px;
+                position: relative;
+                top: 20px;
+            }
+            .all-img {
+                width: 727px;
+                height: 535px;
+                // border: 2px solid orange;
+                position: absolute;
+                display: block;
+                overflow: hidden;
+                top: 75px;
+                left: 175px;
+                z-index: 11;
+                .innerAll-img {
+                    transition: all .7s ease-in-out;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .innerAll-img-animation {
+                    transform: translateY(-300px);
+                    opacity: 0;
+                    animation: innerAllImgAnimation 5s linear 1;
+                }
+            }
+
+
+            .hidden-img {
+                @extend .all-img;
+                opacity: 1;
+                z-index: 1;
+            }
+
+            .first-header {
+                position: absolute;
+                display: block;
+                top: 34px;
+                left: 175px;
+                width: 727px;
+                height: 43px;
+                z-index: 11;
+                transition: all .5s ease-in-out;
+            }
+            .first-header-animation {
+                opacity: 0;
+                animation: firstHeaderAnimation 5s linear 1;
+            }
+            .second-header {
+                @extend .first-header;
+                opacity: 1;
+                z-index: 1;
+            }
+            .date {
+                @extend .first-header;
+                height: 80px;
+                top: 75px;
+                z-index: 12;
+            }
+            .date-animation {
+                opacity: 0;
+                animation: dateAnimation 5s linear 1;
+            }
+            .img-select {
+                width: 222px;
+                height: 222px;
+                border: 2px solid $appleHeader;
+                position: absolute;
+                display: block;
+                z-index: 13;
+                top: 217px;
+                left: 207px;
+                opacity: 0;
+            }
+            .img-select-animation {
+                opacity: 0;
+                animation: imgSelectAnimation 9s linear 1;
+            }
+        }
+
+
+        .mail-img {
+            @include everyImg;
+            .work-mail {
+                width: 868px;
+                height: 561px;
+                position: relative;
+                top: 73px;
+            }
+            .fixed-box {
+                position: absolute;
+                display: block;
+                width: 156px;
+                height: 67px;
+                top: 168px;
+                left: 34px;
+                z-index: 20;
+                transition: all 2s ease-in-out;
+            }
+
+            .fixed-box-animation {
+                top: 215px;
+                animation: fixedBoxAnimation 1.5s linear 1s 1;
+            }
+            .chevron {
+                width: 7px;
+                height: 7px;
+                position: absolute;
+                display: block;
+                z-index: 10;
+                transform: rotate(270deg);
+                top: 155px;
+                left: 42px;
+                transition: all .5s ease-in-out;
+            }
+            .chevron-animation {
+                transform: rotate(0deg);
+                animation: chevronAnimation 2s linear 1;
+            }
+
+            .first-box {
+                opacity: 0;
+                width: 156px;
+                height: 49px;
+                position: absolute;
+                display: block;
+                left: 33px;
+                top: 167px;
+                z-index: 8;
+                // border: 2px solid chocolate;
+                transition: all .5s ease-in-out;
+            }
+            .first-box-animation {
+                opacity: 0;
+                animation: firstBoxAnimation 4s linear 1;
+            }
+            .personal-mail {
+                @extend .work-mail;
+                position: absolute;
+                left: 0px;
+                opacity: 0;
+                transition: all .5s ease-in-out;
+            }
+            .personal-mail-animation {
+                opacity: 1;
+                animation: personalMailAnimation 3s linear 1;
+            }
+        }
+
+
+        .entertainment-img {
+            @include everyImg;
+            .laptop {
+                @include laptop;
+                top: 20px;
+            }
+            .wallpaper {
+                @include wallpaper;
+                transform: translate(115px, -550px);
+            }
+            .browser {
+                width: 530px;
+                height: 333px;
+                position: absolute;
+                display: block;
+                top: 50px;
+                left: 550px;
+                border-radius: 7px;
+                transition: all 1s ease-in-out;
+            }
+            .browser-animation {
+                top: 90px;
+                left: 400px;
+                animation: browserAnimation 2s linear 1;
+            }
+
+            .tv {
+                width: 520.39px;
+                height: 314px;
+                position: absolute;
+                display: block;
+                top: 170px;
+                left: 500px;
+                z-index: 3;
+                border-radius: 7px;
+                transition: all 2s ease-in-out;
+            }
+            .tv-animation {
+                top: 170px;
+                left: 300px;
+                animation: tvAnimation 2.4s linear 1;
+            }
+
+            .music {
+                width: 158px;
+                height: 206px;
+                border-radius: 7px;
+                position: absolute;
+                display: block;
+                top: 90px;
+                left: 120px;
+                transition: all 2s ease-in-out;
+            }
+
+            .music-animation {
+                left: 170px;
+                animation: musicAnimation 2.7s linear 1;
+            }
+        }
+
+        .apple-img {
+            @include everyImg;
+            // opacity: 1;
+            .apple {
+                width: 597px;
+                height: 552px;
+                position: relative;
+                top: 50px;
+                left: 80px;
+                opacity: 1;
+            }
+            .apple-select {
+                position: absolute;
+                display: block;
+                width: 148px;
+                height: 148px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 10px;
+                top: 78px;
+                left: 470px;
+                opacity: 0;
+            }
+
+            .apple-select-animation {
+                opacity: 1;
+                animation: appleSelectAnimation 5s linear 1;
+            }
+            .hidden-apple {
+                @extend .apple;
+                position: absolute;
+                opacity: 0;
+                transition: all 2s ease-in-out;
+            }
+            .hidden-apple-animation {
+                opacity: 1;
+                animation: hiddenAppleAnimation 4s linear 1;
+            }
+        }
+
+        .continuity-img {
+            @include everyImg;
+            .laptop {
+                @include laptop;
+                top: 20px;
+                left: -350px;
+            }
+            .wallpaper {
+                @include wallpaper;
+                transform: translate(115px, -550px);
+                left: -350px;
+            }
+            .mobile {
+                width: 198px;
+                height: 398px;
+                position: absolute;
+                display: block;
+                border-radius: 23px;
+                top: 170px;
+                left: 520px;
+            }
+            .inside-mobile {
+                width: 177px;
+                height: 378px;
+                position: absolute;
+                display: block;
+                z-index: 10;
+                top: 179px;
+                left: 531px;
+                border-radius: 15px;
+            }
+            .box {
+                width: 354px;
+                height: 302px;
+                position: absolute;
+                display: block;
+                z-index: 10;
+                top: 150px;
+                left: 40px;
+                border-radius: 7px;
+                opacity: 0;
+                transition: all 2s ease-in-out;
+            }
+
+            .box-animation {
+                opacity: 1;
+                animation: boxAnimation 4s linear 1;
+            }
+        }
+        // animation
+        .right-item {
+            opacity: 1;
+            transform: translateX(0px);
+            animation: rightItemsAnimation 1.6s 1;
+        }
+
+
+
+
+
+    
+    }
+}
+
+
+
+
+
+// button {
+//     position: absolute;
+//     top: 100;
+//     opacity: 1;
+//     z-index: 11;
+// }
+

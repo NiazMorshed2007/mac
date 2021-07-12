@@ -1,0 +1,28 @@
+@import 'colors';
+@import 'mixins';
+@import 'loader';
+@import 'animation';
+@import 'finderAnimation';
+@import 'spotlightAnimation';
+@import 'keyboardAnimation';
+@import 'notificationsAnimation';
+@import 'safariAnimation';
+@import 'messagesAnimation';
+@import 'photosAnimation';
+@import 'mailAnimation';
+@import 'entertainmentAnimation';
+@import 'appleAnimation';
+@import 'continuityAnimation';
+@import 'slideNum';
+@import 'container';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}

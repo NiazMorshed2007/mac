@@ -1,0 +1,103 @@
+@keyframes searchDivAnimation {
+    0% {
+        width: 0px;
+        opacity: 0;
+        // opacity: 0;
+    }
+    // 70% {
+    //     opacity: 0;
+    // }
+    60% {
+        opacity: 0;
+        width: 0px;
+    }
+    // 35% {
+    //     opacity: 0;
+    //     width: 150px;
+    // }
+    95% {
+        opacity: 1;
+        width: 200px;
+    }
+    100% {
+        opacity: 1;
+        width: 400px;
+    }
+}
+
+
+@keyframes searchPlaceHolder {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes searchFirstAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cursorAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-24px, 180px);
+    }
+    97% {
+        opacity: 0;
+        transform: translate(-24px, 200px);
+    }
+    100% {
+        transform: translate(-24px, 230px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes searchSecondAnimation {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes searchThirdAnimation {
+  0% {
+      opacity: 0;
+  }  
+  98% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

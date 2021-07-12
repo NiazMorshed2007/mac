@@ -1,0 +1,45 @@
+@keyframes wonderfulAnimation {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    60% {
+        width: 0px;
+        opacity: 1;
+    }
+    80% {
+        width: 150px;
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes wonderfulMsgAnimation {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes chatInnerAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    95% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}

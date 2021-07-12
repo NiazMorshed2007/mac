@@ -1,0 +1,50 @@
+@keyframes blankAnimation {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes searchAnimation {
+    0% {
+        width: 0px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        width: 0px;
+    }
+    70% {
+        width: 5px;
+        opacity: 0;
+    }
+    100% {
+        width: 200px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes weatherAnimation {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

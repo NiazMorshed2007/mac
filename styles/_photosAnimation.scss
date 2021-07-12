@@ -1,0 +1,65 @@
+@keyframes innerAllImgAnimation {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(0px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-300px);
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes firstHeaderAnimation {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes dateAnimation {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes imgSelectAnimation {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        background-color: rgba(0,0,0,.4);
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

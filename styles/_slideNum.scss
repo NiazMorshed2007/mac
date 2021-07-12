@@ -1,0 +1,24 @@
+.slide-num {
+    width: 40%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10000;
+    position:  fixed;
+    i {
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 12px;
+        transition: all .4s ease;
+        &:hover {
+            background: rgb(151, 150, 148);
+        }
+    }
+    #prev {
+        transition: all .6s ease-in-out;
+    }
+    #next {
+        transition: all .6s ease-in-out;
+    }
+}
